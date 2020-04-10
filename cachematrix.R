@@ -27,11 +27,14 @@ list(set = set,
 ## Write a short comment describing this function
 #############################################################################
 ## This function computes the inverse of the special "matrix" 
-## created by makeCacheMatrix above.
+## created by above function makeCacheMatrix
+##
 ## First checks if the inverse matrix has already been calculated
+##
 ## If so, it gets the inverse matrix from the cache and skips the computation
-## Otherwise, it calculates the mean of the data and sets the value of 
-## the inverse matrix in the cache via the setinverse function
+##
+## Otherwise, it calculates the inverse matrix and sets its value 
+## in the cache via the setinverse function
 ##############################################################################
 
 cacheSolve <- function(x, ...) {
